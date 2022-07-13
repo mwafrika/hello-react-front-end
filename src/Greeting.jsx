@@ -5,7 +5,6 @@ import { greetingsActions } from './redux/greetings/actions';
 const Greeting = () => {
   const dispatch = useDispatch();
   const greeting = useSelector((state) => state.greeting);
-  console.log(greeting, 'greeting component');
   useEffect(() => dispatch(greetingsActions()), []);
   return (
     <div>
