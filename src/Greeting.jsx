@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { greetingsActions } from './redux/greetings/actions';
+import greetingsActions from './redux/greetings/actions';
 
 const Greeting = () => {
   const dispatch = useDispatch();
@@ -9,7 +9,7 @@ const Greeting = () => {
   return (
     <div>
       <h1>Greetings</h1>
-      <p>{greeting ? greeting : 'Searching please wait...'}</p>
+      <p>{greeting || 'Searching please wait...'}</p>
     </div>
   );
 };

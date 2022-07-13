@@ -1,6 +1,6 @@
 import Message from './services';
 
-export const greetingsActions = () => (dispatch) => {
+const greetingsActions = () => (dispatch) => {
   Message().then((data) => {
     dispatch({
       type: 'SET_GREETING',
@@ -8,3 +8,5 @@ export const greetingsActions = () => (dispatch) => {
     });
   });
 };
+
+export default greetingsActions;
