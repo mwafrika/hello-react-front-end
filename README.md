@@ -2,6 +2,8 @@
 
 This project is a simple example of a React and Rails application. It displays a random message from a list of messages.
 
+## [CLICK HERE TO VIEW THE PULL REQUEST](https://github.com/mwafrika/hello-react-front-end/pull/1)
+
 ## GETTING STARTED
 
 To get started, you need to install the necessary dependencies.
